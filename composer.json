@@ -23,7 +23,9 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "bower-asset/jqjquery-wysibb": "*",
+        "yiisoft/yii2": "2.*"
     },
     "require-dev": {
         "bower-asset/jqjquery-wysibb": "*"
