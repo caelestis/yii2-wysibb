@@ -2,6 +2,14 @@
     "name": "kalyabin/yii2-wysibb",
     "description": "Implements WysiBB to your Yii2 application",
     "version": "dev-master",
+    "keywords": [
+        "yii2",
+        "framework",
+        "wysiwig",
+        "wysibb"
+    ],
+    "type": "package",
+    "license": "BSD-3-Clause",
     "source": {
         "url": "git://github.com/kalyabin/yii2-wysibb.git",
         "type": "git",
@@ -25,5 +33,10 @@
             "kalyabin\\wysibb" : "src"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
 }
