@@ -29,8 +29,8 @@
         "bower-asset/jqjquery-wysibb": "~1"
     },
     "autoload": {
-        "psr-0" : {
-            "kalyabin\\wysibb" : ""
+        "psr-4" : {
+            "kalyabin\\wysibb\\" : ""
         }
     },
     "minimum-stability": "dev",
