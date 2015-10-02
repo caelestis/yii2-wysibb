@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-0" : {
-            "kalyabin\\wysibb" : "src"
+            "kalyabin\\" : ""
         }
     },
     "minimum-stability": "dev",
