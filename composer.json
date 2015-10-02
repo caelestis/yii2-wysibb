@@ -2,6 +2,7 @@
     "name": "kalyabin/yii2-wysibb",
     "description": "Implements WysiBB to your Yii2 application",
     "version": "dev-master",
+    "reference": "b406db9d0912d4be9b0e61003468fc2e",
     "keywords": [
         "yii2",
         "framework",
