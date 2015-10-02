@@ -1,0 +1,27 @@
+{
+    "name": "kalyabin/yii2-wysibb",
+    "version": "dev-master",
+    "source": {
+        "url": "git://github.com/kalyabin/yii2-wysibb.git",
+        "type": "git",
+        "reference": "master"
+    },
+    "authors": [
+        {
+            "name": "Max Kalyabin",
+            "email": "maksim@kalyabin.ru",
+            "homepage": "http://github.com/kalyabin/"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "bower-asset/jqjquery-wysibb": "~1"
+    },
+    "autoload": {
+        "psr-0" : {
+            "kalyabin\\wysibb" : "src"
+        }
+    }
+}
