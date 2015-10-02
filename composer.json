@@ -31,7 +31,7 @@
         "bower-asset/jqjquery-wysibb": "*"
     },
     "autoload": {
-        "psr-0" : {
+        "psr-4" : {
             "kalyabin\\wysibb\\" : ""
         }
     }
