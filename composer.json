@@ -1,5 +1,6 @@
 {
     "name": "kalyabin/yii2-wysibb",
+    "description": "Implements WysiBB to your Yii2 application",
     "version": "dev-master",
     "source": {
         "url": "git://github.com/kalyabin/yii2-wysibb.git",
