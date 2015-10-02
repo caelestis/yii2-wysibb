@@ -26,17 +26,11 @@
         "php": ">=5.4.0"
     },
     "require-dev": {
-        "bower-asset/jqjquery-wysibb": "~1"
+        "bower-asset/jqjquery-wysibb": "*"
     },
     "autoload": {
-        "psr-4" : {
+        "psr-0" : {
             "kalyabin\\wysibb\\" : ""
-        }
-    },
-    "minimum-stability": "dev",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
         }
     }
 }
