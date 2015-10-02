@@ -8,7 +8,7 @@ Run in your console:
 
 ```bash
 php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
-php composer.phar require "kalyabin/wysibb" "*"
+php composer.phar require "kalyabin/yii2-wysibb" "dev-master"
 ```
 
 ## Basic usage
