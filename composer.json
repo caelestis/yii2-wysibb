@@ -2,12 +2,13 @@
     "name": "kalyabin/yii2-wysibb",
     "description": "Implements WysiBB to your Yii2 application",
     "version": "dev-master",
-    "reference": "b406db9d0912d4be9b0e61003468fc2e",
+    "reference": "3c488cfec46b5fe78a63395b2e370aed",
     "keywords": [
         "yii2",
         "framework",
-        "wysiwig",
-        "wysibb"
+        "wysiwyg",
+        "wysibb",
+        "widget"
     ],
     "type": "package",
     "license": "BSD-3-Clause",
