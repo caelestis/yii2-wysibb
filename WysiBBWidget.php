@@ -2,6 +2,7 @@
 namespace kalyabin\wysibb;
 
 use kalyabin\wysibb\WysiBBWidgetAsset;
+use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\JsExpression;
@@ -15,6 +16,16 @@ use yii\widgets\InputWidget;
 class WysiBBWidget extends InputWidget
 {
     /**
+     * Short language code.
+     * Yii::$app->language by default.
+     *
+     * @see https://github.com/wbb/WysiBB#language
+     *
+     * @var string
+     */
+    public $language;
+
+    /**
      * @var array wisybb.js options
      */
     public $clientOptions = [];
@@ -23,6 +34,19 @@ class WysiBBWidget extends InputWidget
      * @var array options for html textarea
      */
     public $inputOptions = ['class' => 'form-control'];
+
+    /**
+     * @inheritdoc
+     */
+    public function init()
+    {
+        $this->language = !empty($this->language) ? $this->language : Yii::$app->language;
+        if (!isset($this->clientOptions['lang'])) {
+            $this->clientOptions['lang'] = $this->language;
+        }
+
+        return parent::init();
+    }
 
     /**
      * @inheritdoc
@@ -40,7 +64,7 @@ class WysiBBWidget extends InputWidget
      */
     public function registerClientScript()
     {
-        WysiBBWidgetAsset::register($this->view);
+        WysiBBWidgetAsset::register($this->view)->appendLanguage($this->language);
         $clientOptions = Json::encode($this->clientOptions);
         $this->view->registerJs(new JsExpression("jQuery('#{$this->options['id']}').wysibb($clientOptions);"));
     }

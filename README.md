@@ -22,3 +22,20 @@ print $form->field($model, 'content')->widget(\kalyabin\wysibb\WysiBBWidget::cla
 ]);
 \yii\widgets\ActiveForm::end();
 ```
+
+## Language support
+
+By default widget uses application language, but you may use other languages:
+
+```php
+/* @var $this \yii\web\View */
+/* @var $model \yii\base\Model */
+$form = \yii\widgets\ActiveForm::begin();
+print $form->field($model, 'content')->widget(\kalyabin\wysibb\WysiBBWidget::className(), [
+    'language' => 'fr',
+    ...
+]);
+\yii\widgets\ActiveForm::end();
+```
+
+More about language support see: https://github.com/wbb/WysiBB#language
